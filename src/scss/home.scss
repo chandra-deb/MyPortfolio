@@ -1,0 +1,22 @@
+.container {
+    margin: auto;
+    width: 100vw;
+    max-width: $max-width;
+    height: 100vh;
+    display: flex;
+
+    .box {
+        flex: 2;
+        &.box1 {
+            background: $purple;
+            flex: 1.1;
+        }
+        &.box2 {
+            background: $dark;
+        }
+        &.box3 {
+            background: $white;
+        }
+    }
+
+}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["scss/main.scss","scss/variables.scss"],"names":[],"mappings":"AAEA;EACI,YCFI","file":"main.77bb5cfd.css","sourceRoot":"../src","sourcesContent":["@import 'variables'; \n\nbody {\n    background: $white;\n}","// colors\n$white: #fdfdfd;\n$light-dark: #393e46;\n$dark: #222831;\n$purple: #fc5185;\n\n"]}
