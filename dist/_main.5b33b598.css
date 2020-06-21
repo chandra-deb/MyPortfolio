@@ -66,6 +66,26 @@ table {
 }
 .container .box.box1 {
   background: #fc5185;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #fdfdfd;
+}
+.container .box.box1 .little-info {
+  margin: 56px;
+}
+.container .box.box1 .little-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.container .box.box1 .little-info p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+.container .box.box1 .little-info .icon-box a {
+  color: #fdfdfd;
+  margin-right: 1rem;
+  font-size: 1.5rem;
 }
 .container .box.box2 {
   margin: 56px 0;
