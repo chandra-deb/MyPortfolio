@@ -2,6 +2,41 @@
 @import 'variables'; 
 @import 'home'; 
 
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     background: $white;
+    font-family: 'Lato', sans-serif;
+
+    .logo {
+        z-index: 11;
+        position: absolute;
+        // background: ;
+        margin: $large-margin;
+        padding: $small-padding;
+        font-size: 2.5rem;
+        font-weight: 900;
+        display: inline-block;
+        border: 5px solid $white;
+        color: white;
+    }
+}
+
+
+.btn {
+    display: inline-block;
+    color: $white;
+    padding: 15px 20px;
+    background: $purple;
+    text-decoration: none;
+    font-size: 1.5rem;
+    border-radius: 20px;
+}
+
+.btn-ghost {
+    background: $dark;
+    border: 5px solid $purple;
 }
