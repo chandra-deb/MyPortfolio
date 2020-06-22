@@ -13,6 +13,7 @@
         &.box1 {
             background: $purple;
             display: flex;
+            // display: none;
             flex-direction: column;
             justify-content: flex-end;
             color: $white;
@@ -106,3 +107,4 @@
     }
 
 }
+

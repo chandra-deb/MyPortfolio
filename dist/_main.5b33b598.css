@@ -144,6 +144,9 @@ table {
 }
 
 body {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1920px;
   background: #fdfdfd;
   font-family: "Lato", sans-serif;
 }
@@ -159,6 +162,115 @@ body .logo {
   color: white;
 }
 
+nav {
+  width: 90vw;
+  z-index: 25;
+  position: absolute;
+  margin: 56px;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+nav .nav-box {
+  flex: 3;
+  display: flex;
+}
+nav .nav-box.nav-holder {
+  flex: 1.8;
+}
+nav a {
+  text-align: center;
+  flex: 1;
+  display: inline-block;
+  font-size: 1.3rem;
+  margin-right: 16px;
+  text-decoration: none;
+  color: #fc5185;
+  transition: all 0.4s ease-in-out;
+}
+nav a:last-of-type {
+  margin-right: 0;
+}
+nav a::after {
+  display: block;
+  margin-top: 5px;
+  content: "";
+  height: 5px;
+  background: #fc5185;
+  transition: all 0.4s ease-in-out;
+  transform: scaleX(0);
+}
+nav a:hover {
+  color: #222831;
+  opacity: 0.8;
+}
+nav a:hover::after {
+  transform: scaleX(1);
+}
+
+.menu-bars {
+  display: none;
+  position: absolute;
+  right: 56px;
+  top: 56px;
+  z-index: 31;
+}
+.menu-bars .bar {
+  margin-bottom: 8px;
+  width: 35px;
+  height: 5px;
+  background-color: #fc5185;
+}
+
+.mobile-nav {
+  display: flex;
+  transform-origin: right top;
+  transform: scale(0);
+  position: absolute;
+  transition: 0.5s;
+}
+
+.mobile-nav-active .mobile-nav {
+  background-color: #fdfdfd;
+  width: 100%;
+  z-index: 20;
+  top: 0;
+  right: 100%;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transform: scale(1);
+}
+.mobile-nav-active .mobile-nav a {
+  color: #fc5185;
+  text-decoration: none;
+  font-size: 3rem;
+  margin-bottom: 50px;
+  transition: transform 0.2s ease-in-out;
+}
+.mobile-nav-active .mobile-nav a::after {
+  transition: all 0.2s ease-in-out;
+  display: block;
+  content: "";
+  background: #222831;
+  width: 100%;
+  height: 5px;
+  transform-origin: left;
+  transform: scaleX(0);
+}
+.mobile-nav-active .mobile-nav a:hover {
+  transform: rotate(-5deg);
+  color: #222831;
+  font-size: 3.5rem;
+}
+.mobile-nav-active .mobile-nav a:hover::after {
+  transform: scaleX(1);
+}
+
 .btn {
   display: inline-block;
   color: #fdfdfd;
@@ -172,6 +284,16 @@ body .logo {
 .btn-ghost {
   background: #222831;
   border: 5px solid #fc5185;
+}
+
+@media (max-width: 974px) {
+  .menu-bars {
+    display: block;
+  }
+
+  nav {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=/_main.5b33b598.css.map */
