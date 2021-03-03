@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/chandra-deb/MyPortfolio#readme",
   "devDependencies": {
-    "pug": "^3.0.0",
+    "pug": "^3.0.1",
     "sass": "^1.26.8"
   },
   "dependencies": {},
